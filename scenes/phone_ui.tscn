@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://brbbutbdtntl4"]
+
+[ext_resource type="Script" uid="uid://djo3ejev0mwjb" path="res://scripts/phone_ui.gd" id="1_plqq2"]
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="1_s8j8e"]
+[ext_resource type="PackedScene" uid="uid://cpux6ro035wms" path="res://scenes/doc.tscn" id="3_b1cpo"]
+[ext_resource type="PackedScene" uid="uid://dx5v1pjby3ldh" path="res://scenes/chat.tscn" id="4_ulwjg"]
+[ext_resource type="PackedScene" uid="uid://s6d2p3cb7hk0" path="res://scenes/drawapp.tscn" id="5_mbpcl"]
+
+[sub_resource type="Gradient" id="Gradient_eahwa"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_iyjhp"]
+gradient = SubResource("Gradient_eahwa")
+
+[node name="Control" type="Control" unique_id=159942196]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_plqq2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=990507969]
+position = Vector2(583.375, 357.25)
+scale = Vector2(5.988281, 8.3671875)
+texture = SubResource("GradientTexture2D_iyjhp")
+
+[node name="app1" type="TextureButton" parent="." unique_id=2099948130]
+layout_mode = 0
+offset_left = 400.00003
+offset_top = 167.0
+offset_right = 528.0
+offset_bottom = 295.0
+scale = Vector2(0.8056642, 0.73242193)
+texture_normal = ExtResource("1_s8j8e")
+
+[node name="app4" type="TextureButton" parent="." unique_id=1561036895]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 312.0
+offset_right = 533.0
+offset_bottom = 440.0
+scale = Vector2(0.8056642, 0.73242193)
+texture_normal = ExtResource("1_s8j8e")
+
+[node name="app5" type="TextureButton" parent="." unique_id=1167029947]
+layout_mode = 0
+offset_left = 540.00006
+offset_top = 312.0
+offset_right = 668.00006
+offset_bottom = 440.0
+scale = Vector2(0.8056642, 0.73242193)
+texture_normal = ExtResource("1_s8j8e")
+
+[node name="app2" type="TextureButton" parent="." unique_id=477835922]
+layout_mode = 0
+offset_left = 524.0
+offset_top = 165.0
+offset_right = 652.0
+offset_bottom = 293.0
+scale = Vector2(0.8056642, 0.73242193)
+texture_normal = ExtResource("1_s8j8e")
+
+[node name="app3" type="TextureButton" parent="." unique_id=1177624706]
+layout_mode = 0
+offset_left = 648.0
+offset_top = 171.0
+offset_right = 776.0
+offset_bottom = 299.0
+scale = Vector2(0.8056642, 0.73242193)
+texture_normal = ExtResource("1_s8j8e")
+
+[node name="Doc" parent="." unique_id=589650225 instance=ExtResource("3_b1cpo")]
+visible = false
+layout_mode = 0
+offset_left = 16.0
+offset_top = 26.0
+offset_right = 16.0
+offset_bottom = 26.0
+
+[node name="doc_home" type="TextureButton" parent="Doc" unique_id=765273760]
+layout_mode = 0
+offset_left = 513.0
+offset_top = 505.0
+offset_right = 641.0
+offset_bottom = 633.0
+texture_normal = ExtResource("1_s8j8e")
+
+[node name="chat" parent="." unique_id=1401164776 instance=ExtResource("4_ulwjg")]
+visible = false
+layout_mode = 0
+offset_left = 2.0
+offset_right = 2.0
+
+[node name="chat_home" type="TextureButton" parent="chat" unique_id=2127571766]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 505.0
+offset_right = 642.0
+offset_bottom = 633.0
+texture_normal = ExtResource("1_s8j8e")
+
+[node name="draw app" parent="." unique_id=1940705122 instance=ExtResource("5_mbpcl")]
+visible = false
+layout_mode = 0
+offset_left = 16.0
+offset_top = 26.0
+offset_right = 16.0
+offset_bottom = 26.0
+
+[node name="draw_home" type="TextureButton" parent="draw app" unique_id=759896606]
+layout_mode = 0
+offset_left = 519.0
+offset_top = 501.0
+offset_right = 647.0
+offset_bottom = 629.0
+texture_normal = ExtResource("1_s8j8e")
+
+[connection signal="pressed" from="app1" to="." method="_on_app_1_pressed"]
+[connection signal="pressed" from="app2" to="." method="_on_app_2_pressed"]
+[connection signal="pressed" from="app3" to="." method="_on_app_3_pressed"]
+[connection signal="pressed" from="Doc/doc_home" to="." method="_on_doc_home_pressed"]
+[connection signal="pressed" from="chat/chat_home" to="." method="_on_chat_home_pressed"]
+[connection signal="pressed" from="draw app/draw_home" to="." method="_on_draw_home_pressed"]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://chgaaym777p66"]
+
+[node name="Warning panel" type="Control" unique_id=1495084964]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1708031602]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 506.0
+offset_right = 1142.0
+offset_bottom = 640.0
+color = Color(0.7534101, 0.5593275, 0.41962472, 1)
+
+[node name="Reminder" type="Label" parent="." unique_id=2141104727]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 539.0
+offset_right = 200.0
+offset_bottom = 597.0
+theme_override_font_sizes/font_size = 39
+text = "Its late at night!"

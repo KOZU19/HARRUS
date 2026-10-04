@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://dx5v1pjby3ldh"]
+
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="1_dg5i7"]
+[ext_resource type="Script" uid="uid://qjhje2w61yml" path="res://scenes/chat.gd" id="1_paia3"]
+
+[node name="chat" type="Control" unique_id=589650225]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_paia3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1006472421]
+layout_mode = 0
+offset_left = 361.0
+offset_top = -3.0
+offset_right = 812.0
+offset_bottom = 644.0
+
+[node name="Label" type="Label" parent="." unique_id=456052093]
+layout_mode = 0
+offset_left = 475.0
+offset_top = -12.0
+offset_right = 792.0
+offset_bottom = 171.0
+scale = Vector2(0.615, 0.615)
+theme_override_colors/font_color = Color(0.02617561, 0.026175609, 0.026175609, 1)
+theme_override_font_sizes/font_size = 65
+text = "Kozu Chat"
+
+[node name="Mom" type="Label" parent="." unique_id=860266886]
+layout_mode = 0
+offset_left = 455.0
+offset_top = 37.0
+offset_right = 772.0
+offset_bottom = 220.0
+scale = Vector2(0.615, 0.615)
+theme_override_colors/font_color = Color(0.02617561, 0.026175609, 0.026175609, 1)
+theme_override_font_sizes/font_size = 65
+text = "Mom"
+
+[node name="Control" type="Control" parent="." unique_id=1795956414]
+anchors_preset = 0
+offset_left = 359.0
+offset_top = 110.0
+offset_right = 799.0
+offset_bottom = 631.0
+offset_transform_enabled = true
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=1748467012]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -11.0
+offset_right = 451.0
+offset_bottom = 507.0
+color = Color(0.28564978, 0.34161496, 0.28298044, 1)
+
+[node name="VSlider" type="VSlider" parent="." unique_id=531509579]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 110.0
+offset_right = 375.0
+offset_bottom = 623.0
+
+[node name="chat" type="Control" parent="." unique_id=1060552850]
+anchors_preset = 0
+offset_left = 380.0
+offset_top = 115.0
+offset_right = 420.0
+offset_bottom = 155.0
+
+[node name="Chatbox" type="ColorRect" parent="chat" unique_id=1730955842]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 9.0
+offset_right = 352.0
+offset_bottom = 99.0
+color = Color(0.56779385, 0.6000514, 0.70333207, 1)
+
+[node name="ChatLabel" type="Label" parent="chat" unique_id=1779265255]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 14.0
+offset_right = 344.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 23
+text = "Insert Chat here"
+
+[node name="MessageScroll" type="ScrollContainer" parent="chat" unique_id=1560958859]
+layout_mode = 0
+offset_left = -14.0
+offset_top = -8.0
+offset_right = 432.0
+offset_bottom = 457.0
+
+[node name="MessageList" type="VBoxContainer" parent="chat/MessageScroll" unique_id=155899690]
+layout_mode = 2
+
+[node name="ReplyList" type="VBoxContainer" parent="chat" unique_id=502116800]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=2136162512]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 13.0
+offset_right = 497.0
+offset_bottom = 141.0
+scale = Vector2(0.605, 0.605)
+texture_normal = ExtResource("1_dg5i7")
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=648908511]
+layout_mode = 0
+offset_left = 377.0
+offset_top = 565.0
+offset_right = 752.0
+offset_bottom = 602.0
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=332760992]
+layout_mode = 0
+offset_left = 767.0
+offset_top = 565.0
+offset_right = 809.0
+offset_bottom = 602.0
+color = Color(0.55164653, 0.44709247, 0.39863062, 1)

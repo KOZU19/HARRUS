@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://dgvxpjl5bp882"]
+
+[ext_resource type="Script" uid="uid://bcxhk1rowvmel" path="res://scenes/world.gd" id="1_7r4gi"]
+[ext_resource type="PackedScene" uid="uid://dc1tf0mh8u8pg" path="res://scenes/camera.tscn" id="1_71j4m"]
+[ext_resource type="PackedScene" uid="uid://domqxia6bvtq0" path="res://scenes/ground.tscn" id="2_qfnet"]
+[ext_resource type="PackedScene" uid="uid://dg7ipexai07xm" path="res://scenes/player.tscn" id="3_i7141"]
+[ext_resource type="PackedScene" uid="uid://brbbutbdtntl4" path="res://scenes/phone_ui.tscn" id="4_4mrxx"]
+[ext_resource type="PackedScene" uid="uid://dkxtggnr2p65g" path="res://scenes/HARRUS1.tscn" id="5_7r4gi"]
+[ext_resource type="Script" uid="uid://ba4nojbp5wehc" path="res://scenes/day_manager.gd" id="6_qfnet"]
+[ext_resource type="PackedScene" uid="uid://bevyqinugkp8y" path="res://scenes/UI.tscn" id="7_i7141"]
+[ext_resource type="PackedScene" uid="uid://chgaaym777p66" path="res://scenes/warning_panel.tscn" id="9_7r4gi"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q5onr"]
+sky_top_color = Color(0.6052773, 0.5788634, 0.6591024, 1)
+sky_horizon_color = Color(0.01831514, 0.16136113, 0.22646055, 1)
+sky_energy_multiplier = 0.8
+
+[sub_resource type="Sky" id="Sky_e3hyu"]
+sky_material = SubResource("ProceduralSkyMaterial_q5onr")
+
+[sub_resource type="Environment" id="Environment_w7kh3"]
+background_mode = 2
+background_energy_multiplier = 1.29
+sky = SubResource("Sky_e3hyu")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iyjhp"]
+size = Vector3(8.870056, 0.12890625, 15.730896)
+
+[node name="world" type="Node3D" unique_id=1018498945]
+script = ExtResource("1_7r4gi")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=500723192]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_color = Color(0.6310483, 0.7021913, 0.824934, 1)
+light_energy = 0.0
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1300745015]
+environment = SubResource("Environment_w7kh3")
+
+[node name="Day_manager" type="Node" parent="." unique_id=754673272]
+script = ExtResource("6_qfnet")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=454599771]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1338909, 0, -8.628753)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=205672227]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1354774192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.87789917, -1.0650272, -4.881195)
+shape = SubResource("BoxShape3D_iyjhp")
+
+[node name="Node3D2" parent="." unique_id=1413246480 instance=ExtResource("2_qfnet")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3229558, 0)
+
+[node name="UI" parent="." unique_id=160053980 instance=ExtResource("7_i7141")]
+offset_left = -15.0
+offset_top = 1.0
+offset_right = -15.0
+offset_bottom = 1.0
+
+[node name="Control" parent="." unique_id=159942196 instance=ExtResource("4_4mrxx")]
+visible = false
+
+[node name="HARRUS" parent="." unique_id=142267772 instance=ExtResource("5_7r4gi")]
+visible = false
+
+[node name="Warning panel" parent="." unique_id=1495084964 instance=ExtResource("9_7r4gi")]
+visible = false
+
+[node name="Camera3D" parent="." unique_id=34578965 instance=ExtResource("1_71j4m")]
+transform = Transform3D(1, 0, 0, 0, 0.8350677, 0.5501473, 0, -0.5501473, 0.8350677, 0, 4.3536196, 4.5108747)
+
+[node name="Node3D3" parent="Camera3D" unique_id=1779560379 node_paths=PackedStringArray("camera", "phone_ui", "harrus_tab") instance=ExtResource("3_i7141")]
+transform = Transform3D(1.0000001, 0, 0, 0, 0.8350676, -0.5501473, 0, 0.55014724, 0.8350677, 0, -1.3218565, -6.2726536)
+camera = NodePath("..")
+phone_ui = NodePath("../../Control")
+harrus_tab = NodePath("../../HARRUS")
+
+[node name="Label" parent="Camera3D/Node3D3" index="3" unique_id=904466551]
+offset_left = 8.0
+offset_top = 170.0
+offset_right = 181.0
+offset_bottom = 193.0
+
+[editable path="Node3D2"]
+[editable path="Camera3D"]
+[editable path="Camera3D/Node3D3"]

@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://s6d2p3cb7hk0"]
+
+[ext_resource type="Script" uid="uid://bj7bk0ddj7u38" path="res://scripts/drawapp.gd" id="1_i21vl"]
+[ext_resource type="Script" uid="uid://dofx1aggr52s8" path="res://scripts/control.gd" id="2_x78c4"]
+
+[node name="draw app" type="Control" unique_id=589650225]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_i21vl")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1006472421]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 4.0
+offset_right = 798.0
+offset_bottom = 645.0
+
+[node name="Label" type="Label" parent="." unique_id=456052093]
+layout_mode = 0
+offset_left = 404.0
+offset_top = -5.0
+offset_right = 959.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(0.02617561, 0.026175609, 0.026175609, 1)
+theme_override_font_sizes/font_size = 65
+text = "DRAW APP"
+
+[node name="Button" type="Button" parent="Label" unique_id=1738782065]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 236.0
+offset_right = 114.0
+offset_bottom = 358.0
+text = "Start"
+
+[node name="Button2" type="Button" parent="Label" unique_id=30993144]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 232.0
+offset_right = 323.0
+offset_bottom = 354.0
+text = "Start"
+
+[node name="Control" type="Control" parent="." unique_id=576677056]
+anchors_preset = 0
+offset_left = 356.0
+offset_top = 4.0
+offset_right = 396.0
+offset_bottom = 44.0
+script = ExtResource("2_x78c4")
+
+[node name="ColorRect2" type="ColorRect" parent="Control" unique_id=144501639]
+layout_mode = 0
+offset_right = 442.0
+offset_bottom = 641.0
+
+[node name="Drawing" type="Control" parent="Control" unique_id=1311425808]
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="Control/Drawing" unique_id=287471218]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 48.0
+offset_right = 168.0
+offset_bottom = 184.0
+color = Color(0.5963672, 0.59636724, 0.59636724, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Control/Drawing" unique_id=477468062]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 41.0
+offset_right = 392.0
+offset_bottom = 177.0
+color = Color(0.5963672, 0.59636724, 0.59636724, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Control/Drawing" unique_id=1493465082]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 219.0
+offset_right = 170.0
+offset_bottom = 355.0
+color = Color(0.5963672, 0.59636724, 0.59636724, 1)
+
+[node name="Anim" type="Control" parent="Control" unique_id=1590940196]
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="Control/Anim" unique_id=60524699]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 48.0
+offset_right = 168.0
+offset_bottom = 184.0
+color = Color(0.5963672, 0.59636724, 0.59636724, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Control/Anim" unique_id=256822124]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 41.0
+offset_right = 392.0
+offset_bottom = 177.0
+color = Color(0.5963672, 0.59636724, 0.59636724, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Control/Anim" unique_id=1339603732]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 219.0
+offset_right = 170.0
+offset_bottom = 355.0
+color = Color(0.5963672, 0.59636724, 0.59636724, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Control/Anim" unique_id=1239556387]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 222.0
+offset_right = 388.0
+offset_bottom = 358.0
+color = Color(0.5963672, 0.59636724, 0.59636724, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Control/Anim" unique_id=579444908]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 391.0
+offset_right = 179.0
+offset_bottom = 527.0
+color = Color(0.5963672, 0.59636724, 0.59636724, 1)
+
+[node name="Drawing_cat" type="Button" parent="Control" unique_id=221204050]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 4.0
+offset_right = 131.0
+offset_bottom = 35.0
+text = "Drawing"
+
+[node name="Anim_cat" type="Button" parent="Control" unique_id=750956664]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 2.0
+offset_right = 350.0
+offset_bottom = 33.0
+text = "Animation"
+
+[connection signal="pressed" from="Label/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/Drawing_cat" to="." method="_on_drawing_cat_pressed"]
+[connection signal="pressed" from="Control/Anim_cat" to="." method="_on_anim_cat_pressed"]

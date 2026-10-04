@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dg7ipexai07xm"]
+
+[ext_resource type="Script" uid="uid://p86axpccjo8b" path="res://scripts/player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="2_onrkg"]
+[ext_resource type="PackedScene" uid="uid://dkxtggnr2p65g" path="res://scenes/HARRUS1.tscn" id="3_dqkch"]
+[ext_resource type="PackedScene" uid="uid://brbbutbdtntl4" path="res://scenes/phone_ui.tscn" id="4_qlg0r"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_iyjhp"]
+
+[node name="Node3D" type="CharacterBody3D" unique_id=1779560379 node_paths=PackedStringArray("interaction_ray")]
+script = ExtResource("1_4flbx")
+interaction_ray = NodePath("RayCast3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2143329856]
+shape = SubResource("SphereShape3D_iyjhp")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=254525524]
+texture = ExtResource("2_onrkg")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2069547382]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.0358887)
+
+[node name="Label" type="Label" parent="." unique_id=904466551]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "press P to open phone"
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=2028538656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.017822266, 0.35205078)
+
+[node name="harrus" parent="." unique_id=142267772 instance=ExtResource("3_dqkch")]
+visible = false
+
+[node name="phone" parent="." unique_id=159942196 instance=ExtResource("4_qlg0r")]
+visible = false

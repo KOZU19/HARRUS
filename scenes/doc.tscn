@@ -1,0 +1,702 @@
+[gd_scene format=3 uid="uid://cpux6ro035wms"]
+
+[node name="Doc" type="Control" unique_id=589650225]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1006472421]
+layout_mode = 0
+offset_left = 158.0
+offset_top = -1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Tab 1" type="Control" parent="." unique_id=1517892091]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Tab 1" unique_id=456052093]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 15.0
+offset_right = 1005.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.02617561, 0.026175609, 0.026175609, 1)
+theme_override_font_sizes/font_size = 22
+text = "ADD (Animation Design Document)"
+
+[node name="Label2" type="Label" parent="Tab 1" unique_id=1250735791]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 37.0
+offset_right = 739.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Project Overview"
+
+[node name="Label3" type="Label" parent="Tab 1" unique_id=1451075352]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 133.0
+offset_right = 493.0
+offset_bottom = 206.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Theme: 
+"
+
+[node name="Label4" type="Label" parent="Tab 1" unique_id=908453974]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 72.0
+offset_right = 577.0
+offset_bottom = 121.0
+theme_override_colors/font_color = Color(0.029506557, 0.029506557, 0.029506557, 1)
+text = "Length :  1 Minute
+Due date : 14 July 2031"
+
+[node name="LineEdit" type="LineEdit" parent="Tab 1" unique_id=1069071563]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 133.0
+offset_right = 776.0
+offset_bottom = 173.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit3" type="LineEdit" parent="Tab 1" unique_id=1664106030]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 183.0
+offset_right = 779.0
+offset_bottom = 224.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+select_all_on_focus = true
+
+[node name="LineEdit4" type="LineEdit" parent="Tab 1" unique_id=989205826]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 255.0
+offset_right = 1111.0
+offset_bottom = 299.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 65
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+select_all_on_focus = true
+
+[node name="LineEdit5" type="LineEdit" parent="Tab 1" unique_id=1044223480]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 360.0
+offset_right = 1111.0
+offset_bottom = 404.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 65
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+select_all_on_focus = true
+
+[node name="LineEdit6" type="LineEdit" parent="Tab 1" unique_id=1544082044]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 437.0
+offset_right = 1108.0
+offset_bottom = 481.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 65
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+select_all_on_focus = true
+
+[node name="LineEdit7" type="LineEdit" parent="Tab 1" unique_id=372592904]
+layout_mode = 0
+offset_left = 508.0
+offset_top = 505.0
+offset_right = 1109.0
+offset_bottom = 549.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 65
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+select_all_on_focus = true
+
+[node name="Label5" type="Label" parent="Tab 1" unique_id=213335654]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.104
+offset_left = 392.0
+offset_top = 176.0
+offset_right = 455.0
+offset_bottom = 218.0
+theme_override_colors/font_color = Color(0.040268797, 0.040268805, 0.040268797, 1)
+theme_override_font_sizes/font_size = 30
+text = "Title"
+
+[node name="Label6" type="Label" parent="Tab 1" unique_id=1493824537]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.104
+offset_left = 376.0
+offset_top = 257.0
+offset_right = 487.84
+offset_bottom = 299.0
+theme_override_colors/font_color = Color(0.040268797, 0.040268805, 0.040268797, 1)
+theme_override_font_sizes/font_size = 24
+text = "Core idea:"
+
+[node name="Label7" type="Label" parent="Tab 1" unique_id=995648271]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.104
+offset_left = 374.0
+offset_top = 304.0
+offset_right = 566.0
+offset_bottom = 346.0
+theme_override_colors/font_color = Color(0.040268797, 0.040268805, 0.040268797, 1)
+theme_override_font_sizes/font_size = 24
+text = "3 Act Structures:"
+
+[node name="Label8" type="Label" parent="Tab 1" unique_id=1804544599]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.104
+offset_left = 380.0
+offset_top = 357.0
+offset_right = 572.0
+offset_bottom = 399.0
+theme_override_colors/font_color = Color(0.040268797, 0.040268805, 0.040268797, 1)
+theme_override_font_sizes/font_size = 24
+text = "Act 1:"
+
+[node name="Label9" type="Label" parent="Tab 1" unique_id=979385170]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.104
+offset_left = 381.0
+offset_top = 425.0
+offset_right = 573.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0.040268797, 0.040268805, 0.040268797, 1)
+theme_override_font_sizes/font_size = 24
+text = "Act 2:"
+
+[node name="Label10" type="Label" parent="Tab 1" unique_id=1482436629]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.104
+offset_left = 393.0
+offset_top = 488.0
+offset_right = 585.0
+offset_bottom = 530.0
+theme_override_colors/font_color = Color(0.040268797, 0.040268805, 0.040268797, 1)
+theme_override_font_sizes/font_size = 24
+text = "Act 3:"
+
+[node name="Label11" type="Label" parent="Tab 1" unique_id=1500932948]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.104
+offset_left = 407.0
+offset_top = 599.0
+offset_right = 599.0
+offset_bottom = 641.0
+theme_override_colors/font_color = Color(0.040268797, 0.040268805, 0.040268797, 1)
+theme_override_font_sizes/font_size = 24
+
+[node name="Tab 2" type="Control" parent="." unique_id=7145623]
+visible = false
+anchors_preset = 0
+offset_left = -139.00002
+offset_top = -20.000006
+offset_right = -99.000015
+offset_bottom = 19.999994
+scale = Vector2(0.915, 0.915)
+
+[node name="Label4" type="Label" parent="Tab 2" unique_id=466562425]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 131.0
+offset_right = 702.0
+offset_bottom = 194.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Characters:"
+
+[node name="Label2" type="Label" parent="Tab 2" unique_id=1541310193]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 38.0
+offset_right = 694.0
+offset_bottom = 101.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Aldo's Animation Plan"
+
+[node name="Label3" type="Label" parent="Tab 2" unique_id=77216700]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 82.0
+offset_right = 693.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Character and Setting"
+
+[node name="Control" type="Control" parent="Tab 2" unique_id=614739812]
+anchors_preset = 0
+offset_left = -10.0
+offset_top = 17.0
+offset_right = 30.0
+offset_bottom = 57.0
+
+[node name="Name" type="Label" parent="Tab 2/Control" unique_id=2122256698]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 175.0
+offset_right = 701.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Name:"
+
+[node name="Age" type="Label" parent="Tab 2/Control" unique_id=1420164660]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 215.0
+offset_right = 702.0
+offset_bottom = 278.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Age:"
+
+[node name="Gender" type="Label" parent="Tab 2/Control" unique_id=1749138350]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 253.0
+offset_right = 708.0
+offset_bottom = 316.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Gender:"
+
+[node name="Occupation" type="Label" parent="Tab 2/Control" unique_id=188939130]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 283.0
+offset_right = 698.0
+offset_bottom = 346.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Occupation:"
+
+[node name="Description" type="Label" parent="Tab 2/Control" unique_id=1570183866]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 320.0
+offset_right = 701.0
+offset_bottom = 383.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Description:"
+
+[node name="Settings" type="Control" parent="Tab 2" unique_id=1461433498]
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 316.0
+offset_right = 48.0
+offset_bottom = 356.0
+
+[node name="Name" type="Label" parent="Tab 2/Settings" unique_id=1897148014]
+layout_mode = 0
+offset_left = 428.0
+offset_top = 150.0
+offset_right = 738.0
+offset_bottom = 213.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "When does the  story set?"
+
+[node name="Age" type="Label" parent="Tab 2/Settings" unique_id=751033589]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 211.0
+offset_right = 750.0
+offset_bottom = 274.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Locations /  Environments (Max 3):"
+
+[node name="Loc_det" type="Control" parent="Tab 2" unique_id=527496306]
+anchors_preset = 0
+offset_left = -1.0
+offset_top = 425.0
+offset_right = 39.0
+offset_bottom = 465.0
+
+[node name="Name" type="Label" parent="Tab 2/Loc_det" unique_id=607082153]
+layout_mode = 0
+offset_left = 431.0
+offset_top = 149.0
+offset_right = 741.0
+offset_bottom = 212.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Location name:"
+
+[node name="Age" type="Label" parent="Tab 2/Loc_det" unique_id=1275887372]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 201.0
+offset_right = 759.0
+offset_bottom = 264.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Description:"
+
+[node name="Button" type="Button" parent="Tab 2" unique_id=1266120829]
+layout_mode = 0
+offset_left = 441.0
+offset_top = 666.0
+offset_right = 601.0
+offset_bottom = 697.0
+text = "+Add more location"
+
+[node name="LineEdit2" type="LineEdit" parent="Tab 2" unique_id=1354380456]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 186.0
+offset_right = 801.0
+offset_bottom = 226.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit3" type="LineEdit" parent="Tab 2" unique_id=961921671]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 237.0
+offset_right = 801.0
+offset_bottom = 277.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit4" type="LineEdit" parent="Tab 2" unique_id=2100424188]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 302.0
+offset_right = 861.0
+offset_bottom = 342.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit5" type="LineEdit" parent="Tab 2" unique_id=602792454]
+layout_mode = 0
+offset_left = 605.0
+offset_top = 356.0
+offset_right = 881.0
+offset_bottom = 396.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit6" type="LineEdit" parent="Tab 2" unique_id=1987157523]
+layout_mode = 0
+offset_left = 782.0
+offset_top = 471.0
+offset_right = 1058.0
+offset_bottom = 511.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit7" type="LineEdit" parent="Tab 2" unique_id=1464481946]
+layout_mode = 0
+offset_left = 871.0
+offset_top = 533.0
+offset_right = 1147.0
+offset_bottom = 573.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit8" type="LineEdit" parent="Tab 2" unique_id=1385278867]
+layout_mode = 0
+offset_left = 643.0
+offset_top = 578.0
+offset_right = 919.0
+offset_bottom = 618.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit9" type="LineEdit" parent="Tab 2" unique_id=338209526]
+layout_mode = 0
+offset_left = 637.0
+offset_top = 639.0
+offset_right = 913.0
+offset_bottom = 679.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="Button2" type="Button" parent="Tab 2" unique_id=1351866551]
+layout_mode = 0
+offset_left = 449.18036
+offset_top = 393.44263
+offset_right = 625.18036
+offset_bottom = 424.44263
+text = "+ Add more character"
+
+[node name="Tabs" type="Control" parent="." unique_id=988131021]
+anchors_preset = 0
+offset_left = -161.0
+offset_top = 105.0
+offset_right = -121.0
+offset_bottom = 145.0
+
+[node name="Tab1" type="Button" parent="Tabs" unique_id=316221753]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 1.0
+offset_right = 315.0
+offset_bottom = 52.0
+text = "Tab 1"
+
+[node name="Tab2" type="Button" parent="Tabs" unique_id=2023893746]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 57.0
+offset_right = 316.0
+offset_bottom = 108.0
+text = "Tab 2"
+
+[node name="Tab3" type="Button" parent="Tabs" unique_id=691027782]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 117.0
+offset_right = 314.0
+offset_bottom = 168.0
+text = "Tab 3"
+
+[node name="tab_3" type="Control" parent="." unique_id=2146734361]
+anchors_preset = 0
+offset_left = 156.99998
+offset_top = 15.000002
+offset_right = 196.99998
+offset_bottom = 55.0
+
+[node name="Label" type="Label" parent="tab_3" unique_id=89606849]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 4.999998
+offset_right = 650.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 37
+text = "Animation Scenes!"
+
+[node name="Label2" type="Label" parent="tab_3" unique_id=1759812062]
+visible = false
+layout_mode = 0
+offset_left = 43.000015
+offset_top = 46.0
+offset_right = 1045.0
+offset_bottom = 229.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Divide the story that you got in mind to 5 scenes, keep it short and on the point!
+These scenes would be the foundation of your  animation storyboard later"
+
+[node name="Label3" type="Label" parent="tab_3" unique_id=149129432]
+layout_mode = 0
+offset_left = 40.000015
+offset_top = 175.0
+offset_right = 1463.0
+offset_bottom = 388.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Scene 1:
+"
+
+[node name="Label4" type="Label" parent="tab_3" unique_id=947397223]
+layout_mode = 0
+offset_left = 50.000015
+offset_top = 268.0
+offset_right = 1473.0
+offset_bottom = 481.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Scene 2:
+"
+
+[node name="Label5" type="Label" parent="tab_3" unique_id=1181715547]
+layout_mode = 0
+offset_left = 44.000015
+offset_top = 336.0
+offset_right = 1467.0
+offset_bottom = 549.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Scene 3:
+"
+
+[node name="Label6" type="Label" parent="tab_3" unique_id=321850114]
+layout_mode = 0
+offset_left = 48.000015
+offset_top = 403.0
+offset_right = 1471.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Scene 4:
+"
+
+[node name="Label7" type="Label" parent="tab_3" unique_id=378395585]
+layout_mode = 0
+offset_left = 43.000015
+offset_top = 499.0
+offset_right = 1466.0
+offset_bottom = 712.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Scene 5:
+"
+
+[node name="LineEdit2" type="LineEdit" parent="tab_3" unique_id=1849512823]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 177.0
+offset_right = 865.0
+offset_bottom = 220.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit3" type="LineEdit" parent="tab_3" unique_id=119280829]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 259.0
+offset_right = 865.0
+offset_bottom = 302.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit4" type="LineEdit" parent="tab_3" unique_id=1155226490]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 337.0
+offset_right = 868.0
+offset_bottom = 380.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit5" type="LineEdit" parent="tab_3" unique_id=612618479]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 415.0
+offset_right = 869.0
+offset_bottom = 458.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
+
+[node name="LineEdit6" type="LineEdit" parent="tab_3" unique_id=1602090621]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 499.0
+offset_right = 863.0
+offset_bottom = 542.0
+placeholder_text = "Enter your  text here!"
+alignment = 1
+max_length = 25
+keep_editing_on_text_submit = true
+backspace_deletes_composite_character_enabled = true
+clear_button_enabled = true
+draw_control_chars = true
+select_all_on_focus = true
