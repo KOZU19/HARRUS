@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://fjfpay7to6jx" path="res://scenes/mc_room.gd" id="1_tlat0"]
 [ext_resource type="Script" uid="uid://bfxek1l6g06ut" path="res://scripts/obj.gd" id="2_tlat0"]
 [ext_resource type="PackedScene" uid="uid://dg7ipexai07xm" path="res://scenes/player.tscn" id="3_1oy4r"]
+[ext_resource type="PackedScene" uid="uid://q56v032kq1gv" path="res://scenes/laptop.tscn" id="5_1oy4r"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_41et2"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -101,16 +102,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9516582, -0.12128544, -4.0
 script = ExtResource("2_tlat0")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="meja" unique_id=92512994]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.59591675, -0.36767578, -0.23806763)
-size = Vector3(2.1918335, 1.1669922, 2.739563)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55332947, -0.36767578, -0.23806763)
+size = Vector3(2.106659, 1.1669922, 2.739563)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="meja" unique_id=1904964086]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5226517, -0.12289429, -0.24441528)
 shape = SubResource("BoxShape3D_ftygw")
 
-[node name="kasur" type="Area3D" parent="meja" unique_id=925033366]
+[node name="meja" type="Area3D" parent="meja" unique_id=925033366]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="meja/kasur" unique_id=1425524349]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="meja/meja" unique_id=1425524349]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.879303, -0.11828613, -0.1498065)
 shape = SubResource("BoxShape3D_wbk04")
 
@@ -135,8 +136,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15935755, 0.33095336, -3.88
 [node name="Marker3D2" type="Marker3D" parent="." unique_id=1203121048]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8966005, -0.81974804, -1.4227425)
 
+[node name="Laptop" parent="." unique_id=683558756 instance=ExtResource("5_1oy4r")]
+visible = false
+
 [connection signal="body_entered" from="obj/kasur" to="." method="_on_kasur_body_entered"]
 [connection signal="body_exited" from="obj/kasur" to="." method="_on_kasur_body_exited"]
+[connection signal="body_entered" from="meja/meja" to="." method="_on_meja_body_entered"]
+[connection signal="body_exited" from="meja/meja" to="." method="_on_meja_body_exited"]
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
 
 [editable path="Camera3D"]

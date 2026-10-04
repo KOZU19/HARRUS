@@ -60,44 +60,41 @@ offset_top = 110.0
 offset_right = 375.0
 offset_bottom = 623.0
 
-[node name="chat" type="Control" parent="." unique_id=1060552850]
+[node name="chat" type="Control" parent="." unique_id=1282726918]
 anchors_preset = 0
 offset_left = 380.0
 offset_top = 115.0
-offset_right = 420.0
-offset_bottom = 155.0
+offset_right = 761.0
+offset_bottom = 560.0
 
 [node name="Chatbox" type="ColorRect" parent="chat" unique_id=1730955842]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 9.0
-offset_right = 352.0
-offset_bottom = 99.0
+offset_right = 381.0
 color = Color(0.56779385, 0.6000514, 0.70333207, 1)
 
 [node name="ChatLabel" type="Label" parent="chat" unique_id=1779265255]
 layout_mode = 0
-offset_left = 30.0
-offset_top = 14.0
-offset_right = 344.0
-offset_bottom = 81.0
+offset_top = 4.0
+offset_right = 381.0
+offset_bottom = 36.0
 theme_override_font_sizes/font_size = 23
 text = "Insert Chat here"
 
 [node name="MessageScroll" type="ScrollContainer" parent="chat" unique_id=1560958859]
 layout_mode = 0
-offset_left = -14.0
-offset_top = -8.0
-offset_right = 432.0
-offset_bottom = 457.0
+offset_top = 40.0
+offset_right = 381.0
+offset_bottom = 40.0
 
 [node name="MessageList" type="VBoxContainer" parent="chat/MessageScroll" unique_id=155899690]
 layout_mode = 2
+size_flags_horizontal = 4
 
 [node name="ReplyList" type="VBoxContainer" parent="chat" unique_id=502116800]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_top = 44.0
+offset_right = 381.0
+offset_bottom = 44.0
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=2136162512]
 layout_mode = 0

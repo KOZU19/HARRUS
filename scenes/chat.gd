@@ -7,7 +7,7 @@ var file_messages : Array[Dictionary]=  [
 	{"sender" : "Mom",
 	"text": "Dont forget to come home before 6",
 	"day": 1,
-	"hour" : 8},
+	"hour" : 8.0},
 	{"sender" : "Mom",
 	"text": "Come to the kedai tommorow",
 	"day": 1,
@@ -28,7 +28,7 @@ var shown_message= []
 var player_replies = []
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	update_chat()
+	pass
 func update_chat() -> void:
 	for child in message_list.get_children():
 		child.queue_free()
@@ -76,4 +76,4 @@ func advance_time(new_day:int, new_hour: int)->void:
 	current_hour = new_hour
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	update_chat()

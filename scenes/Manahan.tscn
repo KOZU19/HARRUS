@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dlydfsafa6puo"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kkh8d"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_ttt0j"]
+sky_material = SubResource("ProceduralSkyMaterial_kkh8d")
+
+[sub_resource type="Environment" id="Environment_kyhw1"]
+background_mode = 2
+sky = SubResource("Sky_ttt0j")
+glow_enabled = true
+
+[node name="Node3D" type="Node3D" unique_id=812680606]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=838210944]
+environment = SubResource("Environment_kyhw1")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=1726720123]
+text = "Manahan"
+font_size = 108

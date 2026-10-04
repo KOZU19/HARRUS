@@ -28,6 +28,8 @@ func _process(delta):
 		icon_2.visible = false
 	if trust == 0:
 		icon_1.visible = false
+		await get_tree().create_timer(0.05).timeout
+		get_tree().change_scene_to_file("res://scenes/ending-done.tscn")
 
 
 func _on_guide_button_pressed() -> void:

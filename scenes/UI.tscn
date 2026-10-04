@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://djkaouuvpvwwk" path="res://scripts/ui.gd" id="1_ro3t7"]
 [ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="2_ro3t7"]
+[ext_resource type="Script" uid="uid://colik4f6tx6pb" path="res://scenes/gameflow.gd" id="3_5en4g"]
 
 [node name="Node" type="Control" unique_id=160053980]
 layout_mode = 3
@@ -164,6 +165,9 @@ offset_top = -223.0
 offset_right = -906.00006
 offset_bottom = -200.0
 text = "GuideMap"
+
+[node name="Gameflow" type="Node" parent="." unique_id=600786797]
+script = ExtResource("3_5en4g")
 
 [connection signal="pressed" from="GuideButton" to="." method="_on_guide_button_pressed"]
 [connection signal="pressed" from="MapButton" to="." method="_on_map_button_pressed"]
