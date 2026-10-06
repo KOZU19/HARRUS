@@ -109,13 +109,25 @@ position = Vector2(386, 13)
 scale = Vector2(0.5234375, 0.4765625)
 texture = ExtResource("2_ro3t7")
 
-[node name="TaskList" type="ColorRect" parent="." unique_id=1231068979]
-layout_mode = 0
+[node name="TaskList" type="Control" parent="." unique_id=1612747226]
+anchors_preset = 0
 offset_left = 825.0
 offset_top = 22.0
 offset_right = 1111.0
 offset_bottom = 184.0
-color = Color(0.8192276, 0.81922776, 0.8192277, 1)
+
+[node name="ColorRect" type="ColorRect" parent="TaskList" unique_id=854747726]
+layout_mode = 0
+offset_right = 287.0
+offset_bottom = 138.0
+color = Color(0.32024416, 0.32024416, 0.32024413, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TaskList" unique_id=1915767980]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 28.0
+offset_right = 256.0
+offset_bottom = 141.0
 
 [node name="Label" type="Label" parent="TaskList" unique_id=686117606]
 layout_mode = 0

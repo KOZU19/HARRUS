@@ -16,15 +16,22 @@ extends Control
 @onready var icon_1: Node2D = $"Trust Mechanic/icon1"
 @onready var icon_2: Node2D = $"Trust Mechanic/icon2"
 @onready var icon_3: Node2D = $"Trust Mechanic/icon3"
+var tasks : Array[String] = []
 var triggered_notif: Array[int] = []
 var notifs = [
 	{"day": 1,
 	"hour":12,
-	"text": "mom sent u a message"},
+	"text": "mom sent u a message",
+	"task": "go to kedai"},
 	{"day": 4,
 	"hour":12,
-	"text": "mom sent u a message"}
+	"text": "mom sent u a message",
+	"task": "go home"}
 ]
+@onready var v_box_container: VBoxContainer = $TaskList/VBoxContainer
+@onready var task_list: Control = $TaskList
+
+
 
 
 func _ready():
@@ -66,6 +73,8 @@ func _process(delta):
 			if not triggered_notif.has(i):
 				triggered_notif.append(i)
 				show_notification(notif["text"])
+				add_task(notif["task"])
+	
 
 func _on_guide_button_pressed() -> void:
 	guide.visible = not guide.visible
@@ -78,3 +87,20 @@ func show_notification(text: String) -> void:
 	$NotificationPanel.visible = true
 	await get_tree().create_timer(1.0).timeout
 	$NotificationPanel.visible = false
+func add_task(task_text: String) -> void:
+
+	update_task_list()
+func update_task_list() -> void:
+	for child in v_box_container.get_children():
+		child.queue_free() 
+		
+	if tasks.size()== 0:
+		var no_task_label:= Label.new()
+		no_task_label.text = "no task for today"
+		v_box_container.add_child(no_task_label)
+		return
+		
+	for task_text in tasks:
+		var task_label:= Label.new()
+		task_label.text = task_text
+		v_box_container.add_child(task_label)
