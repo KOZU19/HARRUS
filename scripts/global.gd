@@ -1,7 +1,7 @@
 extends Node
 var progress = 0
 const max_progress  = 100
-var trusts = 3
+var trusts = 6
 var day : int = 1
 var hour : float = 8.0
 var time_speed : float = 15.0

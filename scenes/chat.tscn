@@ -2,11 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="1_dg5i7"]
 [ext_resource type="Script" uid="uid://qjhje2w61yml" path="res://scenes/chat.gd" id="1_paia3"]
+[ext_resource type="PackedScene" uid="uid://bw3uyqt0ogi76" path="res://scenes/message_bubble.tscn" id="2_sbgww"]
 
 [node name="chat" type="Control" unique_id=589650225]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_paia3")
+message_bubble = ExtResource("2_sbgww")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1006472421]
 layout_mode = 0
@@ -67,28 +69,17 @@ offset_top = 115.0
 offset_right = 761.0
 offset_bottom = 560.0
 
-[node name="Chatbox" type="ColorRect" parent="chat" unique_id=1730955842]
-layout_mode = 0
-offset_right = 381.0
-color = Color(0.56779385, 0.6000514, 0.70333207, 1)
-
-[node name="ChatLabel" type="Label" parent="chat" unique_id=1779265255]
-layout_mode = 0
-offset_top = 4.0
-offset_right = 381.0
-offset_bottom = 36.0
-theme_override_font_sizes/font_size = 23
-text = "Insert Chat here"
-
 [node name="MessageScroll" type="ScrollContainer" parent="chat" unique_id=1560958859]
 layout_mode = 0
-offset_top = 40.0
-offset_right = 381.0
-offset_bottom = 40.0
+offset_top = -8.0
+offset_right = 418.0
+offset_bottom = 448.0
 
 [node name="MessageList" type="VBoxContainer" parent="chat/MessageScroll" unique_id=155899690]
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 77
 
 [node name="ReplyList" type="VBoxContainer" parent="chat" unique_id=502116800]
 layout_mode = 0
@@ -98,10 +89,10 @@ offset_bottom = 44.0
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=2136162512]
 layout_mode = 0
-offset_left = 369.0
-offset_top = 13.0
-offset_right = 497.0
-offset_bottom = 141.0
+offset_left = 371.99997
+offset_top = 6.0
+offset_right = 499.99997
+offset_bottom = 134.0
 scale = Vector2(0.605, 0.605)
 texture_normal = ExtResource("1_dg5i7")
 

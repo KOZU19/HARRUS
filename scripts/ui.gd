@@ -7,9 +7,24 @@ extends Control
 
 @onready var trust: Label = $trust
 @onready var day: Label = $day
-@onready var icon_1: Sprite2D = $"Trust Mechanic/icon1"
-@onready var icon_2: Sprite2D = $"Trust Mechanic/icon2"
-@onready var icon_3: Sprite2D = $"Trust Mechanic/icon3"
+@onready var full_1: Sprite2D = $"Trust Mechanic/icon1/full_1"
+@onready var half_1: Sprite2D = $"Trust Mechanic/icon1/half_1"
+@onready var full_2: Sprite2D = $"Trust Mechanic/icon2/full_2"
+@onready var half_2: Sprite2D = $"Trust Mechanic/icon2/half_2"
+@onready var full_3: Sprite2D = $"Trust Mechanic/icon3/full_3"
+@onready var half_3: Sprite2D = $"Trust Mechanic/icon3/half_3"
+@onready var icon_1: Node2D = $"Trust Mechanic/icon1"
+@onready var icon_2: Node2D = $"Trust Mechanic/icon2"
+@onready var icon_3: Node2D = $"Trust Mechanic/icon3"
+var triggered_notif: Array[int] = []
+var notifs = [
+	{"day": 1,
+	"hour":12,
+	"text": "mom sent u a message"},
+	{"day": 4,
+	"hour":12,
+	"text": "mom sent u a message"}
+]
 
 
 func _ready():
@@ -22,15 +37,35 @@ func _process(delta):
 	day.text = str( Global.day)
 	progress_bar.value = Global.progress
 	progress_bar.max_value = Global.max_progress
+	if trust == 5:
+		full_3.visible = false
+		half_3.visible = true
+	if trust == 4:
+		half_3.visible = false
+	if trust == 3:
+		full_2.visible = false
+		half_2.visible = true
 	if trust == 2:
-		icon_3.visible = false
+		half_2.visible = false
 	if trust == 1:
-		icon_2.visible = false
+		full_1.visible = false
+		half_1.visible = true
 	if trust == 0:
-		icon_1.visible = false
+		half_3.visible = false	
 		await get_tree().create_timer(0.05).timeout
 		get_tree().change_scene_to_file("res://scenes/ending-done.tscn")
-
+	if Global.progress >= Global.max_progress:
+		get_tree().change_scene_to_file("res://scenes/ending-done.tscn")
+	for notif in notifs:
+		if notif ["day"] == Global.day\
+		and int(notif["hour"]) == int(Global.hour):
+			show_notification(notif["text"])
+	for i in range(notifs.size()):
+		var notif = notifs[i]	
+		if notif["day"] == Global.day  and int(notif["hour"]) <= int(Global.hour):
+			if not triggered_notif.has(i):
+				triggered_notif.append(i)
+				show_notification(notif["text"])
 
 func _on_guide_button_pressed() -> void:
 	guide.visible = not guide.visible
@@ -38,3 +73,8 @@ func _on_guide_button_pressed() -> void:
 
 func _on_map_button_pressed() -> void:
 	map.visible  =not map.visible
+func show_notification(text: String) -> void:
+	$NotificationPanel/Label.text = text
+	$NotificationPanel.visible = true
+	await get_tree().create_timer(1.0).timeout
+	$NotificationPanel.visible = false

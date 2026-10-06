@@ -73,10 +73,9 @@ visible = false
 [node name="Camera3D" parent="." unique_id=34578965 instance=ExtResource("1_71j4m")]
 transform = Transform3D(1, 0, 0, 0, 0.8350677, 0.5501473, 0, -0.5501473, 0.8350677, 0, 4.3536196, 4.5108747)
 
-[node name="Node3D3" parent="Camera3D" unique_id=1779560379 node_paths=PackedStringArray("camera", "phone_ui", "harrus_tab") instance=ExtResource("3_i7141")]
+[node name="Node3D3" parent="Camera3D" unique_id=1779560379 node_paths=PackedStringArray("camera", "harrus_tab") instance=ExtResource("3_i7141")]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.8350676, -0.5501473, 0, 0.55014724, 0.8350677, 0, -1.3218565, -6.2726536)
 camera = NodePath("..")
-phone_ui = NodePath("../../Control")
 harrus_tab = NodePath("../../HARRUS")
 
 [node name="Label" parent="Camera3D/Node3D3" index="3" unique_id=904466551]

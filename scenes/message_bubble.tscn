@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bw3uyqt0ogi76"]
+
+[node name="Control" type="Control" unique_id=1453012366]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = -721.0
+offset_bottom = -514.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=974712383]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 25.0
+offset_right = 355.0
+offset_bottom = 86.0
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect" unique_id=192301381]
+layout_mode = 0
+offset_right = 344.0
+offset_bottom = 58.0
+
+[node name="Label" type="Label" parent="ColorRect/MarginContainer" unique_id=776730954]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.083911665, 0.083911665, 0.083911665, 1)
+theme_override_font_sizes/font_size = 19
+text = "Text here"
