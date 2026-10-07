@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://dvtx8asfbek1y"]
+
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="1_cyuof"]
+[ext_resource type="Script" uid="uid://mfeuahj2leck" path="res://scenes/beli_mini_game.gd" id="1_pmg3b"]
+[ext_resource type="PackedScene" uid="uid://bevyqinugkp8y" path="res://scenes/UI.tscn" id="3_3k2b0"]
+
+[node name="Node2D" type="Node2D" unique_id=2108477833]
+script = ExtResource("1_pmg3b")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=286680293]
+offset_right = 1155.0
+offset_bottom = 649.0
+color = Color(0.7774023, 0.662592, 0.7051924, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=761405576]
+position = Vector2(156, 277)
+texture = ExtResource("1_cyuof")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=601371034]
+position = Vector2(352, 276)
+texture = ExtResource("1_cyuof")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=37213612]
+position = Vector2(527, 276)
+texture = ExtResource("1_cyuof")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=573057603]
+position = Vector2(702, 275)
+texture = ExtResource("1_cyuof")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=226273491]
+position = Vector2(879, 269)
+texture = ExtResource("1_cyuof")
+
+[node name="Button1" type="Button" parent="." unique_id=1596266805]
+offset_left = 94.0
+offset_top = 357.0
+offset_right = 213.0
+offset_bottom = 406.0
+text = "Buy"
+
+[node name="Button2" type="Button" parent="." unique_id=961759015]
+offset_left = 290.0
+offset_top = 361.0
+offset_right = 409.0
+offset_bottom = 410.0
+text = "Buy"
+
+[node name="Button3" type="Button" parent="." unique_id=929357205]
+offset_left = 470.0
+offset_top = 359.0
+offset_right = 589.0
+offset_bottom = 408.0
+text = "Buy"
+
+[node name="Button4" type="Button" parent="." unique_id=1404941642]
+offset_left = 641.0
+offset_top = 360.0
+offset_right = 760.0
+offset_bottom = 409.0
+text = "Buy"
+
+[node name="Button5" type="Button" parent="." unique_id=691610324]
+offset_left = 828.0
+offset_top = 355.0
+offset_right = 947.0
+offset_bottom = 404.0
+text = "Buy"
+
+[node name="Node" parent="." unique_id=160053980 instance=ExtResource("3_3k2b0")]
+offset_left = 11.0
+offset_top = 5.0
+offset_right = 11.0
+offset_bottom = 5.0
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

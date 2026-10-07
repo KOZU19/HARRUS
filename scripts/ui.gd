@@ -18,11 +18,12 @@ extends Control
 @onready var icon_3: Node2D = $"Trust Mechanic/icon3"
 var tasks : Array[String] = []
 var triggered_notif: Array[int] = []
+var completed_tasks: Array[String] = []
 var notifs = [
 	{"day": 1,
 	"hour":12,
 	"text": "mom sent u a message",
-	"task": "go to kedai"},
+	"task": "go to toko"},
 	{"day": 4,
 	"hour":12,
 	"text": "mom sent u a message",
@@ -88,7 +89,7 @@ func show_notification(text: String) -> void:
 	await get_tree().create_timer(1.0).timeout
 	$NotificationPanel.visible = false
 func add_task(task_text: String) -> void:
-
+	tasks.append(task_text)
 	update_task_list()
 func update_task_list() -> void:
 	for child in v_box_container.get_children():
@@ -104,3 +105,10 @@ func update_task_list() -> void:
 		var task_label:= Label.new()
 		task_label.text = task_text
 		v_box_container.add_child(task_label)
+		
+func complete_task(task_text: String) -> void:
+	if tasks.has(task_text):
+		tasks.erase(task_text)
+		completed_tasks.append(task_text)
+		update_task_list()
+	

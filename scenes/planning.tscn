@@ -1,0 +1,412 @@
+[gd_scene format=3 uid="uid://dd3oapq2a0usb"]
+
+[ext_resource type="Script" uid="uid://bcxogft0ns6yt" path="res://scenes/planning.gd" id="1_7mtxr"]
+[ext_resource type="Script" uid="uid://b2p8o05aqbkrj" path="res://scenes/panel_1.gd" id="2_lv8cm"]
+[ext_resource type="Script" uid="uid://d200uks56sq4x" path="res://scenes/drop_zone.gd" id="2_m4ons"]
+
+[node name="Planning" type="Control" unique_id=916302490]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 113.0
+offset_top = 64.0
+offset_right = 113.0
+offset_bottom = 64.0
+script = ExtResource("1_7mtxr")
+
+[node name="Aldo" type="ColorRect" parent="." unique_id=35690331]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 17.0
+offset_right = 151.0
+offset_bottom = 139.0
+color = Color(0.5002361, 0.6702313, 0.7873793, 1)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=194560866]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 2.0
+offset_right = 691.0
+offset_bottom = 649.0
+
+[node name="Set1" type="Control" parent="." unique_id=1959139371]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Set1" unique_id=1544778631]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = 291.0
+offset_top = 25.0
+offset_right = 617.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 40
+text = "Judul = "
+
+[node name="Label2" type="Label" parent="Set1" unique_id=577568754]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = 757.0
+offset_top = -4.0
+offset_right = 1083.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 27
+text = "Soal 1"
+
+[node name="Label3" type="Label" parent="Set1" unique_id=517268735]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = 760.0
+offset_top = 175.0
+offset_right = 1086.0
+offset_bottom = 283.0
+theme_override_font_sizes/font_size = 27
+text = "Soal 2"
+
+[node name="Label4" type="Label" parent="Set1" unique_id=731190473]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = 761.0
+offset_top = 369.0
+offset_right = 1087.0
+offset_bottom = 477.0
+theme_override_font_sizes/font_size = 27
+text = "Soal 3"
+
+[node name="Label5" type="Label" parent="Set1" unique_id=1840322078]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = -117.0
+offset_top = 143.0
+offset_right = 209.0
+offset_bottom = 251.0
+theme_override_font_sizes/font_size = 27
+text = "Soal 4"
+
+[node name="Label6" type="Label" parent="Set1" unique_id=969355680]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = -113.0
+offset_top = 353.0
+offset_right = 213.0
+offset_bottom = 461.0
+theme_override_font_sizes/font_size = 27
+text = "Soal 5"
+
+[node name="DropZone" type="ColorRect" parent="Set1" unique_id=1075059378]
+layout_mode = 0
+offset_left = 443.0
+offset_top = 20.0
+offset_right = 602.0
+offset_bottom = 78.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_m4ons")
+
+[node name="Draggable" type="ColorRect" parent="Set1" unique_id=948420061 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 754.0
+offset_top = 31.0
+offset_right = 896.0
+offset_bottom = 87.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone")
+
+[node name="Draggable2" type="ColorRect" parent="Set1" unique_id=398970199 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 939.0
+offset_top = 27.0
+offset_right = 1081.0
+offset_bottom = 83.0
+color = Color(1, 0.2986817, 0.83350915, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone")
+
+[node name="Draggable3" type="ColorRect" parent="Set1" unique_id=652011273 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 757.0
+offset_top = 118.0
+offset_right = 899.0
+offset_bottom = 174.0
+color = Color(0.9113616, 0.5054177, 0.4184676, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone")
+
+[node name="Draggable4" type="ColorRect" parent="Set1" unique_id=1527228917 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 936.0
+offset_top = 116.0
+offset_right = 1078.0
+offset_bottom = 172.0
+color = Color(0.8252012, 0.5017828, 0.7961859, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone")
+
+[node name="Set2" type="Control" parent="." unique_id=825449989]
+anchors_preset = 0
+offset_left = 3.0
+offset_top = 6.0
+offset_right = 43.0
+offset_bottom = 46.0
+
+[node name="DropZone2" type="ColorRect" parent="Set2" unique_id=1371678275]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 93.0
+offset_right = 604.0
+offset_bottom = 151.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_m4ons")
+
+[node name="Draggable5" type="ColorRect" parent="Set2" unique_id=52303601 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 755.0
+offset_top = 200.0
+offset_right = 897.0
+offset_bottom = 256.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone2")
+
+[node name="Draggable6" type="ColorRect" parent="Set2" unique_id=2026404102 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 940.0
+offset_top = 196.0
+offset_right = 1082.0
+offset_bottom = 252.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone2")
+
+[node name="Draggable7" type="ColorRect" parent="Set2" unique_id=1567003017 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 758.0
+offset_top = 287.0
+offset_right = 900.0
+offset_bottom = 343.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone2")
+
+[node name="Draggable8" type="ColorRect" parent="Set2" unique_id=1969850161 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 937.0
+offset_top = 285.0
+offset_right = 1079.0
+offset_bottom = 341.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone2")
+
+[node name="Label2" type="Label" parent="Set2" unique_id=823852864]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = 286.0
+offset_top = 99.0
+offset_right = 612.0
+offset_bottom = 207.0
+theme_override_font_sizes/font_size = 40
+text = "Judul = "
+
+[node name="Set3" type="Control" parent="." unique_id=145039809]
+anchors_preset = 0
+offset_left = 3.0
+offset_top = 90.0
+offset_right = 43.0
+offset_bottom = 130.0
+
+[node name="DropZone3" type="ColorRect" parent="Set3" unique_id=832134107]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 93.0
+offset_right = 604.0
+offset_bottom = 151.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_m4ons")
+
+[node name="Draggable5" type="ColorRect" parent="Set3" unique_id=937853363 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 761.0
+offset_top = 313.0
+offset_right = 903.0
+offset_bottom = 369.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone3")
+
+[node name="Draggable6" type="ColorRect" parent="Set3" unique_id=1829157043 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 946.0
+offset_top = 309.0
+offset_right = 1088.0
+offset_bottom = 365.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone3")
+
+[node name="Draggable7" type="ColorRect" parent="Set3" unique_id=1901786599 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 764.0
+offset_top = 400.0
+offset_right = 906.0
+offset_bottom = 456.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone3")
+
+[node name="Draggable8" type="ColorRect" parent="Set3" unique_id=217509825 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 943.0
+offset_top = 398.0
+offset_right = 1085.0
+offset_bottom = 454.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone3")
+
+[node name="Label2" type="Label" parent="Set3" unique_id=488258516]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = 286.0
+offset_top = 99.0
+offset_right = 612.0
+offset_bottom = 207.0
+theme_override_font_sizes/font_size = 40
+text = "Judul = "
+
+[node name="Set4" type="Control" parent="." unique_id=1618937265]
+anchors_preset = 0
+offset_top = 175.0
+offset_right = 40.0
+offset_bottom = 215.0
+
+[node name="DropZone4" type="ColorRect" parent="Set4" unique_id=1333652089]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 93.0
+offset_right = 604.0
+offset_bottom = 151.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_m4ons")
+
+[node name="Draggable5" type="ColorRect" parent="Set4" unique_id=678706363 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = -119.0
+offset_top = 20.0
+offset_right = 23.0
+offset_bottom = 76.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone4")
+
+[node name="Draggable6" type="ColorRect" parent="Set4" unique_id=1033782095 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 72.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone4")
+
+[node name="Draggable7" type="ColorRect" parent="Set4" unique_id=1493440032 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = -116.0
+offset_top = 107.0
+offset_right = 26.0
+offset_bottom = 163.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone4")
+
+[node name="Draggable8" type="ColorRect" parent="Set4" unique_id=1693107345 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 105.0
+offset_right = 205.0
+offset_bottom = 161.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone4")
+
+[node name="Label2" type="Label" parent="Set4" unique_id=1758122631]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = 286.0
+offset_top = 99.0
+offset_right = 612.0
+offset_bottom = 207.0
+theme_override_font_sizes/font_size = 40
+text = "Judul = "
+
+[node name="Set5" type="Control" parent="." unique_id=1295110517]
+anchors_preset = 0
+offset_top = 269.0
+offset_right = 40.0
+offset_bottom = 309.0
+
+[node name="DropZone5" type="ColorRect" parent="Set5" unique_id=1689498367]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 93.0
+offset_right = 604.0
+offset_bottom = 151.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_m4ons")
+
+[node name="Draggable5" type="ColorRect" parent="Set5" unique_id=1439896808 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = -114.0
+offset_top = 135.0
+offset_right = 28.0
+offset_bottom = 191.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone5")
+
+[node name="Draggable6" type="ColorRect" parent="Set5" unique_id=577355658 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 131.0
+offset_right = 213.0
+offset_bottom = 187.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone5")
+
+[node name="Draggable7" type="ColorRect" parent="Set5" unique_id=1141301845 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = -111.0
+offset_top = 222.0
+offset_right = 31.0
+offset_bottom = 278.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone5")
+
+[node name="Draggable8" type="ColorRect" parent="Set5" unique_id=990346754 node_paths=PackedStringArray("drop_target")]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 220.0
+offset_right = 210.0
+offset_bottom = 276.0
+color = Color(0.373242, 0.67093664, 0.8643722, 1)
+script = ExtResource("2_lv8cm")
+drop_target = NodePath("../DropZone5")
+
+[node name="Label2" type="Label" parent="Set5" unique_id=1277804385]
+modulate = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+layout_mode = 0
+offset_left = 286.0
+offset_top = 99.0
+offset_right = 612.0
+offset_bottom = 207.0
+theme_override_font_sizes/font_size = 40
+text = "Judul = "
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=29668590]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -46.0
+offset_right = 804.0
+offset_bottom = -19.0

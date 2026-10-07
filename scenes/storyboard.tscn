@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://de2487qv5u5a6"]
+
+[ext_resource type="Script" uid="uid://bx8ves1lec0t2" path="res://scenes/card_drop_data.gd" id="1_ue5hb"]
+
+[node name="Node2D" type="Node2D" unique_id=625951376]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=903849620]
+offset_left = 162.0
+offset_top = 219.0
+offset_right = 894.0
+offset_bottom = 468.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_ue5hb")
