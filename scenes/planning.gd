@@ -23,7 +23,11 @@ func update_progress() -> void:
 		completed += 1
 	var percentage := float(completed) / float(total) * 100
 	progress_bar.value = percentage
-
+	var progress_doc = percentage
+	Global.progress_doc = percentage
+	Global.update_global_progress()
+	print(Global.progress)
+	
 
 func _on_texture_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/phone_ui.tscn")

@@ -35,6 +35,8 @@ func update_progress():
 	print(completed)
 	var percentage := float(completed) / float(total) * 100
 	progress_bar.value = percentage
+	Global.progress_storyboard = percentage
+	Global.update_global_progress()
 
 
 func _on_texture_button_pressed() -> void:
