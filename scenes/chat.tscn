@@ -110,3 +110,5 @@ offset_top = 565.0
 offset_right = 809.0
 offset_bottom = 602.0
 color = Color(0.55164653, 0.44709247, 0.39863062, 1)
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

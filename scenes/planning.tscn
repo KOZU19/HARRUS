@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bcxogft0ns6yt" path="res://scenes/planning.gd" id="1_7mtxr"]
 [ext_resource type="Script" uid="uid://b2p8o05aqbkrj" path="res://scenes/panel_1.gd" id="2_lv8cm"]
 [ext_resource type="Script" uid="uid://d200uks56sq4x" path="res://scenes/drop_zone.gd" id="2_m4ons"]
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://sprites/godoticons/icon.svg" id="4_lv8cm"]
 
 [node name="Planning" type="Control" unique_id=916302490]
 layout_mode = 3
@@ -410,3 +411,13 @@ offset_left = -4.0
 offset_top = -46.0
 offset_right = 804.0
 offset_bottom = -19.0
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=915273941]
+layout_mode = 0
+offset_left = -111.0
+offset_top = -43.0
+offset_right = 1.0
+offset_bottom = 74.0
+texture_normal = ExtResource("4_lv8cm")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

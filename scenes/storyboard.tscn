@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://d1b7iuyi8h354" path="res://scenes/storyboard.gd" id="1_v88cn"]
 [ext_resource type="Script" uid="uid://dbfcr1tqr46le" path="res://scenes/panels.gd" id="2_o8k1g"]
 [ext_resource type="Script" uid="uid://b2p8o05aqbkrj" path="res://scenes/panel_1.gd" id="3_o8k1g"]
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://sprites/godoticons/icon.svg" id="5_silje"]
 
 [node name="Storyboard" type="Control" unique_id=1839007371]
 layout_mode = 3
@@ -195,3 +196,11 @@ offset_left = 84.0
 offset_top = 7.0
 offset_right = 862.0
 offset_bottom = 34.0
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1004929088]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+texture_normal = ExtResource("5_silje")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

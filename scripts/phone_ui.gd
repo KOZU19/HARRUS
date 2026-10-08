@@ -6,24 +6,13 @@ extends Control
 
 
 func _on_app_1_pressed() -> void:
-	doc.visible = true
+	get_tree().change_scene_to_file("res://scenes/chat.tscn")
 
 
 func _on_app_2_pressed() -> void:
-	chat.visible = true
-
+	get_tree().change_scene_to_file("res://scenes/planning.tscn")
 
 func _on_app_3_pressed() -> void:
-	draw_app.visible = true
-
-
-func _on_doc_home_pressed() -> void:
-	doc.visible = false
-
-
-func _on_chat_home_pressed() -> void:
-	chat.visible = false
-
-
-func _on_draw_home_pressed() -> void:
-	draw_app.visible = false
+	get_tree().change_scene_to_file("res://scenes/storyboard.tscn")
+func _on_app_4_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/drawapp_home.tscn")

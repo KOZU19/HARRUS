@@ -29,4 +29,8 @@ func _on_texture_rect_4_pressed() -> void:
 
 
 func _on_texture_rect_5_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/phone_ui.tscn")
+
+
+func _on_texture_button_pressed() -> void:
 	pass # Replace with function body.
