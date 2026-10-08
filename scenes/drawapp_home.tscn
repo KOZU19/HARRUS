@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bdemsfeogwava"]
 
 [ext_resource type="Texture2D" uid="uid://d0rjyxw6vussw" path="res://sprites/godoticons/icon2.svg" id="1_i42kw"]
+[ext_resource type="Script" uid="uid://tpr38xwlt52n" path="res://scenes/drawapp_home.gd" id="1_yt88s"]
 [ext_resource type="Script" uid="uid://c3g056v0jco76" path="res://scenes/openfile.gd" id="2_aentm"]
 [ext_resource type="PackedScene" uid="uid://dkxtggnr2p65g" path="res://scenes/HARRUS1.tscn" id="3_swyv7"]
 [ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://sprites/godoticons/icon.svg" id="4_swyv7"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_yt88s")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2087390304]
 layout_mode = 0
@@ -19,7 +21,7 @@ offset_left = -1.0
 offset_top = -2.0
 offset_right = 1149.0
 offset_bottom = 646.0
-color = Color(0.21120569, 0.15621945, 0.15826306, 1)
+color = Color(0.73471653, 0.62968713, 0.62887377, 1)
 
 [node name="TextureRect" type="TextureButton" parent="." unique_id=2009511785]
 layout_mode = 0
@@ -68,6 +70,13 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture_normal = ExtResource("4_swyv7")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=901872449]
+layout_mode = 0
+offset_left = 253.0
+offset_top = 31.0
+offset_right = 877.0
+offset_bottom = 58.0
 
 [connection signal="pressed" from="TextureRect" to="TextureRect" method="_on_pressed"]
 [connection signal="pressed" from="TextureRect2" to="TextureRect" method="_on_texture_rect_2_pressed"]

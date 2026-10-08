@@ -10,6 +10,9 @@ var progress_doc := 0.0
 var progress_storyboard := 0.0
 var progress_draw := 0.0
 var progress_all_task := 0
+var draw_files_completed := 0
+var draw_files_total := 5
+
 func _process(delta: float) -> void:
 	
 	update_timer(delta)
