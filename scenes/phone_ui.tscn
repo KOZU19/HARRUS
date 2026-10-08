@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://brbbutbdtntl4"]
 
 [ext_resource type="Script" uid="uid://djo3ejev0mwjb" path="res://scripts/phone_ui.gd" id="1_plqq2"]
-[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="1_s8j8e"]
-[ext_resource type="PackedScene" uid="uid://cpux6ro035wms" path="res://scenes/doc.tscn" id="3_b1cpo"]
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://sprites/godoticons/icon.svg" id="1_s8j8e"]
+[ext_resource type="PackedScene" uid="uid://dfms7yw7bd4kj" path="res://scenes/doc.tscn" id="3_b1cpo"]
 [ext_resource type="PackedScene" uid="uid://dx5v1pjby3ldh" path="res://scenes/chat.tscn" id="4_ulwjg"]
 [ext_resource type="PackedScene" uid="uid://s6d2p3cb7hk0" path="res://scenes/drawapp.tscn" id="5_mbpcl"]
 

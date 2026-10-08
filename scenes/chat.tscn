@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dx5v1pjby3ldh"]
 
-[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="1_dg5i7"]
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://sprites/godoticons/icon.svg" id="1_dg5i7"]
 [ext_resource type="Script" uid="uid://qjhje2w61yml" path="res://scenes/chat.gd" id="1_paia3"]
 [ext_resource type="PackedScene" uid="uid://bw3uyqt0ogi76" path="res://scenes/message_bubble.tscn" id="2_sbgww"]
 

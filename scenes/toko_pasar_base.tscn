@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dvtx8asfbek1y"]
 
-[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="1_cyuof"]
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://sprites/godoticons/icon.svg" id="1_cyuof"]
 [ext_resource type="Script" uid="uid://mfeuahj2leck" path="res://scenes/beli_mini_game.gd" id="1_pmg3b"]
 [ext_resource type="PackedScene" uid="uid://bevyqinugkp8y" path="res://scenes/UI.tscn" id="3_3k2b0"]
 

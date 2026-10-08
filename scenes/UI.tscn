@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bevyqinugkp8y"]
 
 [ext_resource type="Script" uid="uid://djkaouuvpvwwk" path="res://scripts/ui.gd" id="1_ro3t7"]
-[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://icon.svg" id="2_ro3t7"]
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://sprites/godoticons/icon.svg" id="2_ro3t7"]
 [ext_resource type="Script" uid="uid://colik4f6tx6pb" path="res://scenes/gameflow.gd" id="3_5en4g"]
 
 [node name="Node" type="Control" unique_id=160053980]

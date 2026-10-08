@@ -9,6 +9,8 @@ extends Control
 @onready var drop_zone_8: ColorRect = $DropZones/DropZone8
 @onready var drop_zone_9: ColorRect = $DropZones/DropZone9
 @onready var progress_bar: ProgressBar = $ProgressBar
+func _process(delta: float) -> void:
+	update_progress()
 func update_progress():
 	var completed := 0
 	var total := 5
@@ -30,5 +32,6 @@ func update_progress():
 		completed += 1
 	if drop_zone_9.is_filled:
 		completed += 1
+	print(completed)
 	var percentage := float(completed) / float(total) * 100
 	progress_bar.value = percentage
