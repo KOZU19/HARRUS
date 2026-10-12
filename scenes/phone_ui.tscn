@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://djo3ejev0mwjb" path="res://scripts/phone_ui.gd" id="1_plqq2"]
 [ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://sprites/godoticons/icon.svg" id="1_s8j8e"]
+[ext_resource type="PackedScene" uid="uid://dd3oapq2a0usb" path="res://scenes/planning.tscn" id="3_btm48"]
+[ext_resource type="PackedScene" uid="uid://dx5v1pjby3ldh" path="res://scenes/chat.tscn" id="4_ulwjg"]
+[ext_resource type="PackedScene" uid="uid://de2487qv5u5a6" path="res://scenes/storyboard.tscn" id="5_xal18"]
+[ext_resource type="PackedScene" uid="uid://bdemsfeogwava" path="res://scenes/drawapp_home.tscn" id="6_xal18"]
 
 [sub_resource type="Gradient" id="Gradient_eahwa"]
 
@@ -57,6 +61,28 @@ offset_right = 716.0
 offset_bottom = 408.0
 scale = Vector2(0.8056642, 0.73242193)
 texture_normal = ExtResource("1_s8j8e")
+
+[node name="Apps" type="Control" parent="." unique_id=176598168]
+anchors_preset = 0
+offset_left = -1.0
+offset_top = -8.0
+offset_right = 39.0
+offset_bottom = 32.0
+
+[node name="Planning" parent="Apps" unique_id=916302490 instance=ExtResource("3_btm48")]
+visible = false
+layout_mode = 0
+
+[node name="chat" parent="Apps" unique_id=589650225 instance=ExtResource("4_ulwjg")]
+visible = false
+layout_mode = 0
+
+[node name="Storyboard" parent="Apps" unique_id=1839007371 instance=ExtResource("5_xal18")]
+visible = false
+layout_mode = 0
+
+[node name="Control" parent="Apps" unique_id=953614116 instance=ExtResource("6_xal18")]
+layout_mode = 1
 
 [connection signal="pressed" from="app1" to="." method="_on_app_1_pressed"]
 [connection signal="pressed" from="app2" to="." method="_on_app_2_pressed"]

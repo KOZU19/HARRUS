@@ -17,20 +17,16 @@ func _on_pressed() -> void:
 
 
 func _on_texture_rect_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/draw.tscn")
+	get_tree().change_scene_to_file("res://scenes/drawing_app.tscn")
 
 
 func _on_texture_rect_3_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/draw.tscn")
+	get_tree().change_scene_to_file("res://scenes/drawing_app.tscn")
 
 
 func _on_texture_rect_4_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/draw.tscn")
+	get_tree().change_scene_to_file("res://scenes/drawing_app.tscn")
 
 
 func _on_texture_rect_5_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/phone_ui.tscn")
-
-
-func _on_texture_button_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/drawing_app.tscn")

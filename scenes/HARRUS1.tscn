@@ -159,7 +159,6 @@ offset_bottom = 374.0
 color = Color(0.56966776, 0.50428265, 0.78064317, 1)
 
 [node name="Project-tab" type="Control" parent="tabs" unique_id=308067504]
-visible = false
 anchors_preset = 0
 offset_left = 259.0
 offset_top = 117.0
@@ -168,9 +167,47 @@ offset_bottom = 157.0
 
 [node name="ColorRect" type="ColorRect" parent="tabs/Project-tab" unique_id=1643865253]
 layout_mode = 0
-offset_right = 814.0
-offset_bottom = 424.0
+offset_left = 4.0
+offset_top = 1.0
+offset_right = 818.0
+offset_bottom = 425.0
 color = Color(0.71216077, 0.30793974, 0.64704114, 1)
+
+[node name="GlobalProgress" type="ProgressBar" parent="tabs/Project-tab" unique_id=164573131]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 58.0
+offset_right = 751.0
+offset_bottom = 85.0
+
+[node name="Label" type="Label" parent="tabs/Project-tab/GlobalProgress" unique_id=884169559]
+layout_mode = 0
+offset_left = 10.0
+offset_top = -31.0
+offset_right = 718.0
+offset_bottom = -8.0
+text = "Global Progress"
+
+[node name="doc_progress" type="ProgressBar" parent="tabs/Project-tab" unique_id=1840416805]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 179.0
+offset_right = 749.0
+offset_bottom = 206.0
+
+[node name="storyboard_progress" type="ProgressBar" parent="tabs/Project-tab" unique_id=827894272]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 250.0
+offset_right = 749.0
+offset_bottom = 277.0
+
+[node name="draw_progress" type="ProgressBar" parent="tabs/Project-tab" unique_id=1048982110]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 331.0
+offset_right = 755.0
+offset_bottom = 358.0
 
 [node name="Resources-tab" type="Control" parent="tabs" unique_id=773683984]
 visible = false

@@ -102,6 +102,8 @@ shape = SubResource("BoxShape3D_wbk04")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2229445, 0, -7.9947352)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Toko" unique_id=2017686196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1105957, 0)
+size = Vector3(1, 5.2211914, 1)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Toko" unique_id=753810238]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24853516, 0.16875172, 0.47232533)

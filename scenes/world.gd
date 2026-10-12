@@ -1,6 +1,10 @@
 extends Node3D
+var enterable := false
+var day = Global.day
 
-
+var toko_days = [1,3,5]
+var kedai_days = [1,4,6]
+var pasar_days = [2,3,5]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -21,6 +25,7 @@ func _process(delta: float) -> void:
 
 
 func _on_manahan_body_entered(body: CharacterBody3D) -> void:
+	
 	get_tree().change_scene_to_file("res://scenes/Manahan.tscn")
 
 
@@ -28,12 +33,24 @@ func _on_home_body_entered(body: CharacterBody3D) -> void:
 	get_tree().change_scene_to_file("res://scenes/MCroom.tscn")
 
 func _on_pasar_body_entered(body: CharacterBody3D) -> void:
-	get_tree().change_scene_to_file("res://scenes/pasar.tscn")
+	if Global.day in pasar_days:
+		get_tree().change_scene_to_file("res://scenes/toko_pasar_base.tscn")
+	else:
+		print("gabisa masuk")
+
+
 
 
 func _on_toko_body_entered(body: CharacterBody3D) -> void:
-	get_tree().change_scene_to_file("res://scenes/toko kelontong.tscn")
+	if Global.day in toko_days:
+		get_tree().change_scene_to_file("res://scenes/toko_pasar_base.tscn")
+	else:
+		print("gabisa masuk")
 
 
 func _on_kedai_body_entered(body: CharacterBody3D) -> void:
-	get_tree().change_scene_to_file("res://scenes/kedai.tscn")
+	if Global.day in kedai_days:
+		get_tree().change_scene_to_file("res://scenes/Kedai_cutscenes.tscn")
+	else:
+		print("gabisa masuk")
+	

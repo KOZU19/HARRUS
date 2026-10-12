@@ -181,8 +181,8 @@ func toggle_phone():
 	if phone_ui == null:
 		return
 	phone_ui.visible = not phone_ui.visible
-	Global.progress += 5
-	Global.trusts -= 1
+	#Global.progress += 5
+	#Global.trusts -= 1
 func  handle_harrus():
 	if Input.is_action_just_pressed("harrus"):
 		toggle_harrus()

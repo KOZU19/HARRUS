@@ -10,3 +10,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	progress_bar.value = Global.progress_draw * 100
+
+
+func _on_texture_button_pressed() -> void:
+	self.visible = false

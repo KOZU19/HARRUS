@@ -83,4 +83,4 @@ offset_bottom = 58.0
 [connection signal="pressed" from="TextureRect3" to="TextureRect" method="_on_texture_rect_3_pressed"]
 [connection signal="pressed" from="TextureRect4" to="TextureRect" method="_on_texture_rect_4_pressed"]
 [connection signal="pressed" from="TextureRect5" to="TextureRect" method="_on_texture_rect_5_pressed"]
-[connection signal="pressed" from="TextureButton" to="TextureRect" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

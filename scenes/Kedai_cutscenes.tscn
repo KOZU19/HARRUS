@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://by0kebuin1af2"]
+
+[ext_resource type="Script" uid="uid://7man4s2y3ptk" path="res://scenes/kedai_cutscenes.gd" id="1_7dtqm"]
+[ext_resource type="Texture2D" uid="uid://cqmx707u8r2xb" path="res://sprites/godoticons/icon.svg" id="2_qwhy8"]
+
+[node name="Node2D" type="Node2D" unique_id=899453360]
+script = ExtResource("1_7dtqm")
+
+[node name="bob" type="Sprite2D" parent="." unique_id=172901764]
+position = Vector2(221.99991, 422.00006)
+scale = Vector2(3.421875, 3.1875)
+texture = ExtResource("2_qwhy8")
+
+[node name="Timer" type="Timer" parent="." unique_id=1457794885]
+wait_time = 6.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
